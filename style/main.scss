@@ -1,0 +1,165 @@
+// Colors Var
+$main-bg : #160F29;
+$main-btn : #241B3E;
+$primary : #504470;
+$primary-opacity : #342E45;
+$primary-light: #8063CE;
+$primary-gradient: linear-gradient(to right, #8063CE , #C047C9);
+
+// Font var
+$header-font: 'Palanquin', sans-serif;
+$primary-font: 'Roboto', sans-serif;
+
+body {
+  background: $main-bg;
+  font-family: $primary-font;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+.section {
+  padding: 3em 0 1em;
+}
+nav {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+  }
+  .btn-group {
+    display: flex;
+    align-items: center;
+    & > div {
+      margin-left: 16px;
+    }
+    .shop-btn {
+      color: white;
+      position: relative;
+      cursor: pointer;
+      i {
+        font-size: 32px;
+      }
+      &:hover {
+        color: yellow;
+      }
+      &:before {
+        content: "1";
+        background: $primary-light;
+        font-size: 10px;
+        padding: 2px 5px;
+        border-radius: 50%;
+        position: absolute;
+        right: -3px;
+      }
+    }
+  }
+}
+nav::after {
+  clear: both;
+}
+.btn {
+  background: #e6e6e6;
+  padding: 12px 32px;
+  border-radius: 36px;
+  cursor: pointer;
+  display: inline;
+  &-primary {
+    background: $primary;
+    color: #fff;
+  }
+  &-gradient {
+    background: $primary-gradient;
+    color: #fff;
+  }
+  &-next {
+    .material-icons {
+      line-height: 0.5;
+      vertical-align: middle;
+      font-size: 21px;
+      transition: 200ms;
+    }
+  }
+}
+.header {
+  text-align: center;
+  &-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    font-family: $header-font;
+  }
+  &-subtitle {
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 23px;
+    color: #fff;
+    opacity: 0.4;
+  }
+}
+.circles {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: auto;
+  &-item {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: $primary-opacity;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    .material-icons {
+      font-size: 48px;
+      opacity: 0.2;
+    }
+    p {
+      margin-top: 4px;
+      opacity: 0.2;
+    }
+    &:hover {
+      background: lighten($primary-opacity, 5%);
+    }
+    &:nth-child(even) {
+      margin-top: 16px;
+    }
+  }
+  .active {
+    background: $primary-light;
+    color: $main-btn;
+    .material-icons,
+    p {
+      opacity: 0.8;
+    }
+  }
+}
+.next-wrapper {
+  text-align: center;
+  margin-top: 3.5em;
+  .btn-next {
+    position: relative;
+    top: 16px;
+    opacity: 0;
+    transition: 200ms;
+    pointer-events: none;
+    &.show {
+      top: 0;
+      opacity: 1;
+      pointer-events: all;
+    }
+    &:hover {
+      i {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+[class*="invisible"] {
+  display: none;
+}
