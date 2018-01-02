@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Palanquin:700|Roboto:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+  <title>App</title>
+</head>
+<body>
+  <nav class="wrapper">
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt=""></a>
+    <div class="btn-group">
+      <div class="shop-btn"><i class="material-icons">star_border</i></div>
+      <div class="login-btn btn btn-primary">Iniciar Sesion</div>
+      <div class="login-btn btn btn-gradient">Registrate</div>
+    </div>
+  </nav>
+  <div class="wrapper section">
+    <div class="header">
+      <div class="header-title">Mis intereses</div>
+      <div class="header-subtitle">Estas son tus recomendaciones basadas en tu perfil.</div>
+    </div>
+  </div>
+  <div class="wrapper section">
+    <div class="interest-cards">
+      <div class="interest-cards__item">
+        <div class="interest-cards__img">
+          <img src="assets/img/house.jpg" alt="item image">
+        </div>
+        <div class="interest-cards__body normal">
+          <div class="title">Casa en venta</div>
+          <div class="price">$3,000,000</div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa, a modi.</div>
+          <div class="btn btn-primary btn-card">Ver más información</div>
+        </div>
+      </div>
+      <div class="interest-cards__item">
+        <div class="interest-cards__img">
+          <img src="assets/img/car.jpg" alt="item image">
+        </div>
+        <div class="interest-cards__body normal">
+          <div class="title">Kia Picanto 2008</div>
+          <div class="price">$450,000</div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa, a modi.</div>
+          <div class="btn btn-primary btn-card">Ver más información</div>
+        </div>
+      </div>
+      <div class="interest-cards__item bg-yellow">
+        <div class="interest-cards__body">
+          <div class="title">Inicia ya tu contrato de Luz</div>
+          <div class="price">$650</div>
+          <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa, a modi.</div>
+          <div class="btn white btn-card">Ver más información</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
