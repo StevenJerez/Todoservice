@@ -23,7 +23,7 @@ body {
 }
 .section {
   padding: 3em 0 1em;
-  max-width: 1024px;
+  max-width: 1128px;
 }
 nav {
   padding: 16px 0;
@@ -223,6 +223,10 @@ nav::after {
 .bg-yellow {
   background: #FEFF89;
   color: #000 !important;
+}
+.bg-purple {
+  background: $primary-light;
+  color: white !important;
 }
 [class*="invisible"] {
   display: none;
